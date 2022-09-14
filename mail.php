@@ -1,5 +1,5 @@
 <?php  
-if( isset($_POST['submit']) ) {
+
 //getting user data
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
@@ -36,6 +36,6 @@ $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
    } else {
     $failed = "Error: Message was not sent, Try again Later";
    }
-}
+
  
 ?>
