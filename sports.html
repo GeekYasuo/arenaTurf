@@ -1,0 +1,351 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=0.1">
+    <title>Sports Club Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+    <style>
+        ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+    </style>
+</head>
+
+<body>
+    <section style="background-image: url(background.jpg);" class="header">
+        <nav>
+            <a href="index.html"><img src="arenalogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html.html">About</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text_box">
+            <h1>Arena Sports Club </h1>
+            <p>"WHAT SEEMS IMPOSSIBLE TODAY WILL SOON BECOME YOUR WARM-UP</p>
+
+
+
+        </div>
+    </section>
+    <section class="Sports">
+        <h1>SPORTS</h1>
+        <div class="row">
+            <div class="sports-col">
+                <img src="Cricket.png">
+                <div class="layer">
+                    <h3>CRICKET</h3>
+                </div>
+            </div>
+            <div class="sports-col">
+                <img src="badminton.png">
+                <div class="layer">
+                    <h3>BADMINTON</h3>
+                </div>
+            </div>
+            <div class="sports-col">
+                <img src="football.png">
+                <div class="layer">
+                    <h3>FOOTBALL</h3>
+                </div>
+            </div>
+            <div class="sports-col">
+                <img src="volleyball.png">
+                <div class="layer">
+                    <h3>VOLLEYBALL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- footer -->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Narangi Bypass Road, Virar(W), Mumbai, IN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>7249 885 933</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>support@arena-turf.games</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="data:image/png;base64,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" class="img-fluid" style="height:25vh;" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                              <h3 style="color:#ff5e14">Come, Let's Pay...</h3>
+                                <p>Want to play games ?<br>
+You can Invite a team or Join a pre scheduled match Through Arena</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://www.facebook.com/profile.php?id=100084824876624"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://www.instagram.com/arena_turf/"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Review</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022, All Right Reserved <a href="https://arena-turf.games">Arena Turf</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
