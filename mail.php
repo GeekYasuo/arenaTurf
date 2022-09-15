@@ -8,6 +8,9 @@ $phone = $_POST['tel'];
 $cityName = $_POST['city'];
 $homeAddress = $_POST['address'];
  
+print_r($fromEmail);
+ die;
+
 //Recipient email, Replace with your email Address
 $mailTo = 'support@arena-turf.games';
  
