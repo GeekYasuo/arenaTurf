@@ -6,6 +6,15 @@ require_once('Exception.php');
 use \PHPMailer\PHPMailer\PHPMailer;
 use \PHPMailer\PHPMailer\Exception;
 
+    //getting user data
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $fromEmail = $_POST['email'];
+    $phone = $_POST['tel'];
+    $sportsName = $_POST['city'];
+    $time = $_POST['time'];
+    $date = $_POST['date'];
+
 $mail=new PHPMailer(true); // Passing `true` enables exceptions
 
 try {
@@ -20,15 +29,6 @@ try {
     $mail->Port=465;
 
     $mail->setFrom('support@arena-turf.games', 'Arena Turf');
-
-    //getting user data
-   $firstName = $_POST['firstName'];
-   $lastName = $_POST['lastName'];
-   $fromEmail = $_POST['email'];
-   $phone = $_POST['tel'];
-   $sportsName = $_POST['city'];
-   $time = $_POST['time'];
-   $date = $_POST['date']
     
     //recipient
     $mail->addAddress($fromEmail, $firstName $lastName);     // Add a recipient
