@@ -28,10 +28,10 @@ try {
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
 
-    $mail->setFrom('support@arena-turf.games', 'Arena Turf');
+    $mail->addAddress('support@arena-turf.games', 'Arena Turf');
     
     //recipient
-    $mail->addAddress($fromEmail, $firstName);     // Add a recipient
+    $mail->setFrom($fromEmail, $firstName);     // Add a recipient
     
     //content
     $mail->isHTML(true); // Set email format to HTML
