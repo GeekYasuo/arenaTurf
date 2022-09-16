@@ -31,7 +31,7 @@ try {
     $mail->setFrom('support@arena-turf.games', 'Arena Turf');
     
     //recipient
-    $mail->addAddress($fromEmail, $firstName $lastName);     // Add a recipient
+    $mail->addAddress($fromEmail, $firstName);     // Add a recipient
     
     //content
     $mail->isHTML(true); // Set email format to HTML
