@@ -11,7 +11,7 @@ use \PHPMailer\PHPMailer\Exception;
     $lastName = $_POST['lastName'];
     $fromEmail = $_POST['email'];
     $phone = $_POST['tel'];
-    $sportsName = $_POST['city'];
+    $sports = $_POST['sports'];
     $time = $_POST['time'];
     $date = $_POST['date'];
 
@@ -27,11 +27,13 @@ try {
     $mail->Password='Sports123456789'; // SMTP password
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
-
-    $mail->addAddress('support@arena-turf.games', 'Arena Turf');
     
+    $mail->setFrom('support@arena-turf.games', 'Arena Turf'); 
+    
+    $mail->addAddress('support@arena-turf.games', 'Arena Turf');
+    $mail->addAddress($fromEmail, $firstName);
     //recipient
-    $mail->setFrom($fromEmail, $firstName);     // Add a recipient
+       // Add a recipient
     
     //content
     $mail->isHTML(true); // Set email format to HTML
@@ -40,7 +42,7 @@ try {
     <p> <b>Client Name: </b> '.$firstName . " " . $lastName . '</p>
     <p> <b>Email: </b> '.$fromEmail .'</p>
     <p> <b>Phone Number: </b> '.$phone .'</p>
-    <p> <b>Sports Name: </b> '.$sportsName .'</p>
+    <p> <b>Sports Name: </b> '.$sports .'</p>
     <p> <b>Date for Booking: </b> '.$date.'</p>
     <p> <b>Time: </b> '.$time .'</p>';
 
